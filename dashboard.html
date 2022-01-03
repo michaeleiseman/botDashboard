@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link href="dashboard.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1 style="margin:0px">Dashboard</h1>
+    <div id="grid">
+        <div id="bots" class="iconometer">
+            <div class="icon" id="blue">
+                <img src="small-bot-top-col1.png" alt="robot icon" width="24" height="35">
+            </div>
+            <div class="meter">
+                <div class="meterTitle">Verified Bots</div>
+                <div class="meterNumber">12</div>
+            </div>
+        </div>
+        <div id="threat" class="iconometer">
+            <div class="icon" id="red">
+                <img src="blocked-bots-top-col2.png" alt="robot icon" width="30" height="30">
+            </div>
+            <div class="meter">
+                <div class="meterTitle">Bocked Threats</div>
+                <div class="meterNumber">0</div>
+            </div>
+        </div>
+        <div id="captcha" class="iconometer">
+            <div class="icon" id="green">
+                <img src="captcha-fail-top-col3.png" alt="robot icon" width="30" height="30">
+            </div>
+            <div class="meter">
+                <div class="meterTitle">CAPTCHA Fails</div>
+                <div class="meterNumber">4</div>
+            </div>
+        </div>
+        <div id="visitorNumber" class="iconometer">
+            <div class="icon" id="yellow">
+                <img src="pristine-visitors-top-col4.png" alt="robot icon" width="30" height="30">
+            </div>
+            <div class="meter">
+                <div class="meterTitle">Verified Vistors</div>
+                <div class="meterNumber">502</div>
+            </div>
+        </div>
+        <div id="middleRow">
+            <div id="traffic">
+                <span class="relative">
+                    <img id="chart" src="Bots-Traffic.png" alt="graph of bot traffic versus time">
+                    <div class="meterTitle" id="botsTraffic">Bots Traffic</div>
+                    <div class="meterTitle" id="currentMonth">Current Month</div>
+                </span>
+            </div>
+            <div id="mitigated">
+                <div class="meterTitle">Mitigated</div>
+                <div id="graphic">
+                    <img src="mitigated-numbers-middle-col2.png" id="mitigatedNumbers" alt="number of bot mitigations" width="63" height="35">
+                </div>
+            </div>
+        </div>
+        <div id="review" class="speedometer">
+            <div class="meterTitle">Bots to Review</div>
+            <img class="speedRing" src="bots-to-review-bottom-col1.png" alt="Bots to Review Number">
+        </div>
+        <div id="automated" class="speedometer">
+            <div class="meterTitle">Automated</div>
+            <img class="speedRing" src="automated-bottom-col2.png" alt="Bots to Review Number">
+        </div>
+        <div id="visitorPercent" class="speedometer">
+            <div class="meterTitle">Verified Visitors</div>
+            <img class="speedRing" src="prisitine-visitors-bottom-col3.png" alt="Verified Visitors">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,180 @@
+#grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "bo"
+      "th"
+      "ca"
+      "vn"
+      "mr"
+      "re"
+      "au"
+      "vp";
+}
+#chart {
+    width: 300px;
+    height: 150px;
+}
+body{
+    background-color: #dddddd;
+    padding:0px;
+    color: #444444;
+    font-family: sans-serif;
+    padding: 10px;
+}
+@media (min-width: 600px) {
+    #grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 20px;
+        grid-template-areas:
+        "bo bo bo th th th"
+        "ca ca ca vn vn vn"
+        "mr mr mr mr mr mr"
+        "re re au au vp vp";
+    }
+    #chart {
+        width: 500px;
+        height: 250px;
+    }
+}
+@media (min-width: 1000px) {
+    #grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 20px;
+        grid-template-areas:
+        "bo bo bo th th th ca ca ca vn vn vn"
+        "mr mr mr mr mr mr mr mr mr mr mr mr"
+        "re re re re au au au au vp vp vp vp";
+    }
+}
+.iconometer {
+    background-color: white;
+    grid-area: im;
+    height: 100px;
+    display: flex
+}
+.icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+}
+.meter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    flex: 1
+}
+.meterTitle {
+    font-weight: bold;
+    text-align: center;
+}
+.meterNumber {
+    font-size: 48px;
+    font-weight: bold;
+    color: #cccccc
+}
+#blue {
+    background-color: blue;
+}
+#red {
+    background-color: red;
+}
+#green {
+    background-color: green;
+}
+#yellow {
+    background-color: orange;
+}
+#bots {
+    grid-area: bo;
+}
+#threat {
+    grid-area: th;
+}
+#captcha {
+    grid-area: ca;
+}
+#visitorNumber {
+    grid-area: vn;
+}
+#middleRow {
+    grid-area: mr;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+#traffic {
+    background-color: white;
+    border-radius: 5px;
+    position:relative;
+    flex: 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px
+}
+.relative {
+    position: relative;
+}
+#botsTraffic {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    font-size: 14px;
+}
+#currentMonth {
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    font-size: 14px;
+}
+#mitigated {
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    flex: 1;
+}
+#graphic {
+    width: 175px;
+    height: 150px;
+    background-image: url("mitigated-ring-middle-col2.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.speedometer {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px
+}
+.speedRing {
+    width: 100px;
+    height: 100px;
+}
+#review {
+    grid-area: re;
+}
+#automated {
+    grid-area: au;
+}
+#visitorPercent {
+    grid-area: vp;
+}
